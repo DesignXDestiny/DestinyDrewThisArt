@@ -1,4 +1,15 @@
-# Design X Destiny
+#Destiny Drew This Art
+by Destiny Barrett
+This remains as a portfolio of my work.
+Hosted through git hub.
+bought the domain elsewhere.
+
+<hr>
+*old intro*
+Below is what I had at first, but this website is evolving; I changed the domain name and re-designed a few parts.  THis will be a work in progress for as long as I keep creating.
+
+
+####Design X Destiny
 
 ## Description
 This is _my website_ &amp; portfolio.
@@ -57,7 +68,7 @@ Here are some ways to contribute to my website.
 
 ###### Your Opinion
 Email me about how I could improve my site or services.
-Contact me regarding your ideas fo a project.
+Contact me regarding your ideas for a project.
 
 ###### Your Money
 Purchase a product, schedule a meeting for a service, or click the donation button. 
