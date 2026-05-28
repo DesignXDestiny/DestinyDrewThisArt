@@ -2,7 +2,7 @@
 by Destiny Barrett
 This remains as a portfolio of my work.
 Hosted through git hub.
-bought the domain elsewhere.
+bought the domain elsewhere. (porkbun)
 
 <hr>
 *old intro*
