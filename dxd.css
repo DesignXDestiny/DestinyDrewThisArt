@@ -7,13 +7,6 @@
         font-weight: 400;
         font-display: swap;
     }
-@font-face {
-    font-family: 'Megrim';
-    src: url('font/Megrim/Megrim-Regular.ttf') format('truetype');
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-    }
 
 @font-face {
     font-family: 'Montserrat';
@@ -22,6 +15,14 @@
         font-weight: 400;
         font-display: swap;
         }
+@font-face {
+    font-family: 'Megrim';
+    src: url('font/Megrim/Megrim-Regular.ttf') format('truetype');
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+    }
+
 @font-face {
     font-family: 'Euphoria Script';
     src: url('font/Euphoria_Script/EuphoriaScript-Regular.ttf') format('truetype');
@@ -62,15 +63,12 @@
     }
 
 
-
 				
 html, body {
-	font-size: 100%;
 	margin: 0px;
 	padding: 0px;
     font-family: 'Montserrat', sans-serif;
   	background: linear-gradient(#e66465, #9198e5, dodgerblue);
- 	min-width: 100%;
     min-height: 100vh;
     min-width: 100vw;
  	align-items: center;
@@ -91,18 +89,17 @@ html, body {
 				 		color: #f5f0e6;
 				 		}
 
-   	.flex-wrap {
+.flex-wrap {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
 			align-items: center;
 			align-content: center;
 			background-color: rgba(0, 0, 0, 0.01);
-           flex-direction: column;
-           width: 100%;
-           gap: 1rem;
+            flex-direction: column;
+            width: 100%;
+            gap: 1rem;
 			}
-
 
 
   .parallax-section {
@@ -117,7 +114,6 @@ html, body {
     		}
 
     
-
 /* Image CAROUSEL */
   * {box-sizing:border-box; }
 
@@ -200,7 +196,7 @@ html, body {
             /* Fading animation */
             .fade {
               animation-name: fade;
-              animation-duration: 1.5s;     }
+              animation-duration: .5s;     }
             
             @keyframes fade {
               from {opacity: .4}
@@ -208,12 +204,13 @@ html, body {
                }
 
 
+
 	div {
 		margin: 0 auto;		}
 
 	section {
 		width: auto;
-        padding: 4%;
+        padding: 3%;
 		padding-bottom: 3%;
 		border-radius: 30px;
 		justify-content: center;
@@ -221,7 +218,7 @@ html, body {
 		background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .1));
         align-items: center;
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 18px;
         flex-direction: row;
         margin-bottom: 10%;
         margin-top: 10%;
@@ -250,14 +247,13 @@ article {
     }
 article img {
         max-height: 70%;
-}
+     }
 
 
 img {
      justify-content: center;
      align-items: center;
      text-align:center;
-     padding: 0px;
       }
 
 		section:hover{
@@ -373,7 +369,7 @@ img {
 .thumbnail img{
 	margin: 0 auto;
 	align-self: center;
-	max-width: 300px;
+	max-width: 200px;
     height: auto;
    }
 
@@ -688,8 +684,7 @@ section h2, section h3, section h4, section h5, footer h2, footer h3, footer h4 
                     border-style: solid;
                     border-width: 1px 2px 4px 1px;
                     border-color: black;
-                    flex: 1;
-                        
+                    flex: 1;   
           /*linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .1)); */
 		}
 
@@ -718,7 +713,7 @@ section h2, section h3, section h4, section h5, footer h2, footer h3, footer h4 
 
 
 
- /*Sizing & Transition*/
+ /*Sizing & Transition
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -728,12 +723,17 @@ section h2, section h3, section h4, section h5, footer h2, footer h3, footer h4 
 }
 		 
 		* {
-		  -webkit-transition: all 1s ease;
-		  -moz-transition: all 1s ease;
-		  -o-transition: all 1s ease;
-		  -ms-transition: all 1s ease;
-		  transition: all 1s ease;
-		}
+		  -webkit-transition: all .5s ease;
+		  -moz-transition: all .5s ease;
+		  -o-transition: all .5s ease;
+		  -ms-transition: all .5s ease;
+		  transition: all .5s ease;
+		}*/
+
+section:hover, footer:hover, article:hover, a:hover, li:hover, img:hover,
+section:active, footer:active, article:active, a:active, li:active, img:active {
+  transition: color .7s ease, background-color 1s ease, width .5s ease, height .5s ease, font-size .5s ease;
+}
 
 
 
