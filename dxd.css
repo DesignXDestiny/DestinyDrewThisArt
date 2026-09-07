@@ -223,11 +223,11 @@ html, body {
         margin-bottom: 10%;
         margin-top: 10%;
 		}
-/* Target the image and text ONLY, skip the header/title */
-    section img {
+        /* Target the image and text ONLY, skip the header/title */
+     section img {
         flex: 1; }
     
-    /* Target everything EXCEPT headers for the flex-row layout */
+         /* Target everything EXCEPT headers for the flex-row layout */
     section > *:not(h2):not(h3) {
         display: flex;
         flex-direction: row;
@@ -235,7 +235,7 @@ html, body {
         flex-wrap: wrap;
         justify-content: center; /* Centers items horizontally */
         align-items: center;
-    }
+         }
 
 article {
     	justify-content: center;
@@ -244,10 +244,10 @@ article {
 		display: flex;
         flex-wrap: wrap;
         gap: 1%;
-    }
-article img {
+         }
+    article img {
         max-height: 70%;
-     }
+            }
 
 
 img {
@@ -513,7 +513,9 @@ nav a img:hover{
           background-color: yellow;
         }
 
-
+nav a, a, button, .btn, nav, input, #navigation {
+  transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease, transform 0.5s ease, opacity 0.5s ease, top 0.5s ease;
+}
 
 
 

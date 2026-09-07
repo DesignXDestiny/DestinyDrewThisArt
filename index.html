@@ -332,71 +332,39 @@ What I love most is creating custom designs for each person.
      
      </main>
     
-          <!--
-        <img src="images/DigitalPainting-barrett.jpg" alt="Stefani, My Cousin">
-        <p>Digital Painting 
-          <br> Adobe Photoshop</p>
-    	 -->
 
-    <!--https://stackoverflow.com/questions/425216/issue-with-background-color-and-google-chrome-->
 
- <!-- Combined & Optimized Scroll Script to Fix TBT -->
-    <script>
-      let lastScrollPos = window.pageYOffset;
-      let ticking = false;
+<!-- Optimized Scroll Script -->
+<script>
+  let ticking = false;
+  let prevScrollpos = window.pageYOffset;
 
-      window.addEventListener('scroll', function() {
-        lastScrollPos = window.pageYOffset;
-        if (!ticking) {
-          window.requestAnimationFrame(function() {
-            // NAVIGATION: Handles hiding/showing and fixing the navbar on scroll
-            var currentScrollPos = window.pageYOffset;
-            const nav = document.getElementById("navigation");
-            
-            if (prevScrollpos > currentScrollPos) {
-              nav.style.top = "0";
-            } else {
-              nav.style.top = "-35%";
-            }
-            prevScrollpos = currentScrollPos;
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      window.requestAnimationFrame(function() {
+        const currentScrollPos = window.pageYOffset;
+        const nav = document.getElementById("navigation");
+        
+        if (!nav) return;
 
-            // handleScroll equivalent (fixed class toggle)
-            var offset = window.pageYOffset ? window.pageYOffset : document.documentElement.scrollTop;
-            nav.className = (offset > 104 ? 'fixed' : '');
-
-            ticking = false;
-          });
-          ticking = true;
+        // Hide/Show navbar on scroll direction
+        if (prevScrollpos > currentScrollPos) {
+          nav.style.top = "0";
+        } else {
+          nav.style.top = "-35%";
         }
+        prevScrollpos = currentScrollPos;
+
+        // Safely toggle the fixed class without wiping other classes
+        nav.classList.toggle('fixed', currentScrollPos > 104);
+
+        ticking = false;
       });
-      // Initialize prevScrollpos for the scroll check
-      var prevScrollpos = window.pageYOffset;
-    </script>
+      ticking = true;
+    }
+  });
+</script>
 
-	  <script>  /*  Search Bar  */
-
-		      function myFunction() {
-		        var input, filter, table, tr, td, i, txtValue;
-		        input = document.getElementById("myInput");
-		        filter = input.value.toUpperCase();
-		        table = document.getElementById("myTable");
-		        tr = table.getElementsByTagName("tr");
-		        for (i = 0; i < tr.length; i++) {
-		          td = tr[i].getElementsByTagName("td")[0];
-		          if (td) {
-		            txtValue = td.textContent || td.innerText;
-		            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-		              tr[i].style.display = "";
-		            } 
-		            /*   $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)  */
-
-		            else {
-		              tr[i].style.display = "none";
-		              }
-		            }       
-		          }
-		      }
-			</script>
 
         <script>
             let slideIndex = [1,1];
