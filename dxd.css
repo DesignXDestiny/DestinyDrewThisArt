@@ -250,17 +250,14 @@ article {
     }
 article img {
         max-height: 70%;
-        padding: 0px;
-        justify-content: center;
-		text-align: center;
-		align-items: center;
-    }
+}
 
 
 img {
      justify-content: center;
      align-items: center;
      text-align:center;
+     padding: 0px;
       }
 
 		section:hover{
