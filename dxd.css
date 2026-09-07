@@ -374,12 +374,13 @@ img {
    }
 
 header {
+    margin-top: 0%;
 	margin-bottom: 10%;
+    justify-content: center;
+	align-items: center;
+	align-content: center;
+    width: 100%;
 }
-    header img {
-    	max-width: 100%;
-	    z-index: 0;
-	    }
 
 
 footer {
